@@ -1,5 +1,9 @@
-const METAR_URL = "https://apihub.kma.go.kr/api/typ02/openApi/AmmIwxxmService/getMetar?pageNo=1&numOfRows=10&dataType=XML&icao=RKSI&authKey=5qWRhPLNTlOlkYTyzV5Trw";
+// 1. 기상청 타겟 URL
+const TARGET_URL = "https://apihub.kma.go.kr/api/typ02/openApi/AmmIwxxmService/getMetar?pageNo=1&numOfRows=10&dataType=XML&icao=RKSI&authKey=5qWRhPLNTlOlkYTyzV5Trw";
 
+// 2. 방금 만든 내 클라우드플레어 워커 주소 뒤에 기상청 주소를 붙임
+
+const METAR_URL = `https://yp.zumeokbab.workers.dev/?url=${encodeURIComponent(TARGET_URL)}`;
 document.addEventListener("DOMContentLoaded", fetchWeatherData);
 
 async function fetchWeatherData() {
