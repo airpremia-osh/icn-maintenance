@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인천국제공항(RKSI) 기상 정보</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✈️ 인천국제공항(RKSI) 실시간 기상 정보</h1>
+            <p id="update-time">업데이트 중...</p>
+        </header>
+
+        <main>
+            <section class="alert-section" id="warning-section">
+                <h2>⚠️ 공항 특보</h2>
+                <div id="airport-warnings" class="warning-content">특보 정보를 불러오는 중입니다...</div>
+            </section>
+
+            <section class="weather-grid">
+                <div class="weather-card">
+                    <h3>🌡️ 온도</h3>
+                    <p>현재 온도: <span id="temp" class="value">--</span> ℃</p>
+                    <p>체감 온도: <span id="feels-like" class="value">--</span> ℃</p>
+                </div>
+                
+                <div class="weather-card">
+                    <h3>💨 바람</h3>
+                    <p>풍향: <span id="wind-dir" class="value">--</span></p>
+                    <p>풍속: <span id="wind-speed" class="value">--</span> kt</p>
+                </div>
+
+                <div class="weather-card">
+                    <h3>👁️ 시야 및 구름</h3>
+                    <p>시정: <span id="visibility" class="value">--</span></p>
+                    <p>운고: <span id="ceiling" class="value">--</span> ft</p>
+                </div>
+
+                <div class="weather-card">
+                    <h3>☔ 강수</h3>
+                    <p>일 강수량: <span id="precipitation" class="value">--</span> mm</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

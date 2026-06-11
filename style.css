@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #1a365d;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+#update-time {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* 특보 섹션 */
+.alert-section {
+    background-color: #fff5f5;
+    border-left: 5px solid #e53e3e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.alert-section h2 {
+    color: #c53030;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.warning-content {
+    font-weight: 500;
+    color: #2d3748;
+}
+
+/* 기상 정보 그리드 */
+.weather-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.weather-card {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+}
+
+.weather-card h3 {
+    color: #2b6cb0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #ebf8ff;
+    padding-bottom: 10px;
+}
+
+.weather-card p {
+    margin-bottom: 8px;
+    color: #4a5568;
+}
+
+.value {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a202c;
+}
