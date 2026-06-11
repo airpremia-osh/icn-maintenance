@@ -1,7 +1,4 @@
-// 1. 기상청 원본 주소 (절대 건드리지 않음!)
 const TARGET_URL = "https://apihub.kma.go.kr/api/typ02/openApi/AmmIwxxmService/getMetar?pageNo=1&numOfRows=10&dataType=XML&icao=RKSI&authKey=5qWRhPLNTlOlkYTyzV5Trw";
-
-// 2. 완벽하게 특수기호를 변환(인코딩)해서 프록시에 전달하는 코드
 const METAR_URL = "https://corsproxy.io/?" + encodeURIComponent(TARGET_URL);
 
 document.addEventListener("DOMContentLoaded", fetchWeatherData);
