@@ -1,8 +1,8 @@
-// 1. 기상청 타겟 URL (numOfRows=10 필수)
+// 1. 기상청 타겟 URL
 const TARGET_URL = "https://apihub.kma.go.kr/api/typ02/openApi/AmmIwxxmService/getMetar?pageNo=1&numOfRows=10&dataType=XML&icao=RKSI&authKey=5qWRhPLNTlOlkYTyzV5Trw";
 
-// 2. KMA 서버 차단을 피하기 위해 가장 성공률이 높은 codetabs 프록시 적용
-const METAR_URL = `https://api.codetabs.com/v1/proxy?quest=${TARGET_URL}`;
+// ✅ 수정된 코드 (encodeURIComponent 추가!)
+const METAR_URL = `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(TARGET_URL)}`;
 
 document.addEventListener("DOMContentLoaded", fetchWeatherData);
 
