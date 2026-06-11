@@ -1,5 +1,4 @@
-const TARGET_URL = "https://apihub.kma.go.kr/api/typ02/openApi/AmmIwxxmService/getMetar?pageNo=1&numOfRows=10&dataType=XML&icao=RKSI&authKey=5qWRhPLNTlOlkYTyzV5Trw";
-const METAR_URL = "https://corsproxy.io/?" + encodeURIComponent(TARGET_URL);
+const METAR_URL = "https://apihub.kma.go.kr/api/typ02/openApi/AmmIwxxmService/getMetar?pageNo=1&numOfRows=10&dataType=XML&icao=RKSI&authKey=5qWRhPLNTlOlkYTyzV5Trw";
 
 document.addEventListener("DOMContentLoaded", fetchWeatherData);
 
